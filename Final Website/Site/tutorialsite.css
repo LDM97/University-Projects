@@ -1,0 +1,98 @@
+html { /* Set the color of the unused parts of the browser */
+	background-color: grey;
+}
+
+body { /* Set the defaults for the main body of the page */
+	margin: auto;
+	text-align: left;
+	max-width: 960px;
+	min-width: 450px;
+	background-color: white;
+	font-size: 17px;
+	font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+h1, h2, .exampleCaptions { /* Align text that needs to be aligned */
+    text-align: center;
+}
+
+.pageSection { /* The default values for the page sections */
+	margin: 10px;
+	min-height: 150px;
+}
+
+.pagePictures { /* Default settings and values for the pictures used */
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+    border-style: double;
+    border-color: black;
+	border-radius: 5px;
+	line-height: 0;
+}
+
+.codeImageExamples { /* Settings for the code example images, which are in the middle of the page and stretched 
+						across, to display the code screenshots in a readable manner. */
+	width: 600px;
+	margin: auto;
+    border-style: double;
+    border-color: black;
+	border-radius: 5px;
+	line-height: 0;
+}
+
+.break { /* Create the blue horizontal strips used for page breaks between sections */
+	background-color: blue;
+	height: 15px;
+	border: 0px;
+}
+
+#nav ul { /* Main navigation bar setup and positioned */
+	list-style-type: none;
+	padding-left: 5px;
+	text-align: left;
+	height: 50px;
+	background-color: blue;
+	max-width: 960px;
+}
+
+.navItem { /* Set the list elements (navigation bar items) to be horizonral ("display: inline") and to have padding, so they are spearated from one another */
+	display: inline;
+	padding: 0px;
+}
+
+.navText { /* Format the text of the navigation bar */
+	text-decoration: none;
+	color: 	white;
+	line-height: 50px;
+	padding-right: 5px;
+	font-size: 25px;
+}
+
+#navLogo { /* Position the uni logo that is present on the navigation bar */
+	float: right;
+	margin: 2.5px;
+}
+
+/* Sticky nav bar code below, works inline with the "TutorialSiteJavaScript.js" file.
+	concepts used from YouTube video: https://www.youtube.com/watch?v=utonytGKodc */
+	
+.fixed{
+	position: fixed;
+	top: -17px;
+	left: 0px;
+	width: 100%;
+}
+
+.fixed .nav-inner-most{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.nav-placeholder {
+	margin: 0px;
+}
+
+.fixed .nav-inner{
+	padding: 0px;
+}

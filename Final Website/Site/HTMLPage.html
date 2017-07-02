@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title> Tutorial Site: HTML Page </title>
+		<link rel = "stylesheet" type = "text/css" href = "tutorialsite.css" />
+		
+		<script src = "JavaScript/jquery-1.12.3.min.js" type = "text/javascript"> </script>
+		<script type = "text/javascript" src = "JavaScript/TutorialSiteJavaScript.js" > </script>
+		
+	</head>
+	
+	<body>
+	
+		<div id = "nav">
+			<ul>
+				<li class = "navItem"> <a class = "navText" href = "HomePage.html"> Home </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "HistoryPage.html"> How </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "HTMLPage.html"> HTML </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "CSSPage.html"> CSS </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "QuizPage.html"> Quiz </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "furtherReading.html"> Extra </a> </li>
+				<li id = "navLogo"> <img src = "Images/uniLogo.png" width = "40" height = "45" alt = "UniLogo" /> </li>
+			</ul>
+		</div>
+	
+		<div class = "pageSection">
+			<h1> HTML </h1>
+			<p> Hypertext Markup Language (HTML) is the basic framework of all websites. It uses what are known as tags to seperate different elements of the page to allow them to be accessed and formatted
+			by CSS and JavaScript. Simple web pages can be made using HTML alone as it provides a basic level of formatting to allow headings, text, pictures, colors and more to be added to a page. Below are sections
+			covering the basics of HTML that you need to know in order to start making web pages.</p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Tags </h2>
+			<p> HTML is made up of tags. Tags are used to specify the different elements that make up the page. Elements are designated by placing them within the appropriate tag. Tags are within 
+				a "&lt;" and a "&gt;" symbol. For example, the heading tag (used to designate headings) can come in an array of sizes, with 1 being the biggest header. A header tag would look like: &lt; h1 &gt; this is a title
+				&lt; /h1 &gt;, with the text in between the tags representing the text that will be displayed as a heading. It is important to notice that every tag has a matching closing tag, which is the tag's 
+				name within the "&lt; &gt;" but with a "/" before the name to show that it is a closing tag. Closing tags mark the end of the tag and its content. If tags are not closed, the rest of the page will be 
+				interpreted as being part of that tag, thus it is good practice to write the tags close when you write the opening and then add the content. <br/><br/> Below is a table containing some of the most common 
+				and important tags that are needed to make a site. Note, there are many more than the ones here.</p>
+				
+				<table border = "1" cellpadding = "5" cellspacing = "5" width = "100%">
+					<tr>
+						<th align = "center" colspan = "2"> <b> Useful HTML Tags </b> </th>
+					</tr> <tr>
+						<td align = "center"> <b> Tag </b> </td> <td align = "center"> <b> Description </b> </td>
+					</tr> <tr>
+						<td align = "center"> <b> &lt; !DOCTYPE &gt; </b> </td> <td> Defines the type of document. (use &lt; !DOCTYPE html &gt; to define it as a html type document). </td>
+					</tr> <tr>
+						<td align = "center"> <b> &lt; html &gt; </b>	</td> <td> Defines the HTML section of the document. All of your HTML code will go within this tag.  </td>
+					</tr> <tr>
+						<td align = "center"> <b> &lt; title &gt; </b> </td> <td> Defines the title section of the document. </td>
+					</tr> <tr>
+						<td align = "center"> <b> &lt; body &gt; </b> </td> <td> Defines the body of the document. All of the code for the page will go within this tag. </td>
+					</tr> <tr>
+						<td align = "center"> <b> &lt; h1 &gt; </b> </td> <td> Defines the headers/titles of a document. Can be h1 - h6, decreasing in size the higher the number. </td>
+					</tr> <tr>
+						<td align = "center"> <b> &lt; p &gt;  </b> </td> <td> Defines a paragraph. Any plain text for the page will go within this tag. </td>
+					</tr> <tr>
+						<td align = "center"> <b> &lt; br &gt; </b> </td> <td> Placed alone (with no closing tag) within a paragraph tag to indicate a line break at that point in the text. </td>
+					</tr>
+				</table>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Attributes </h2>
+			<p> Attributes further enhance tags by allowing you to specify additional properties or behaviour for the tags that you use. This is where HTML starts to become the framework for  
+				<a href = "CSSPage.html">CSS</a> as some attributes are used to identify parts of the page so that CSS can format them. The most common are listed below. Note, there are many more than these
+				basic ones. </p>
+				
+			<table border = "1" cellpadding = "5" cellspacing = "5" width = "100%">
+				<tr>
+					<th align = "center" colspan = "2"> <b> Useful Tag Attributes </b> </th>
+				</tr> <tr>
+					<td align = "center"> <b> Attribute </b> </td> <td align = "center"> <b> Description </b> </td>
+				</tr> <tr>
+					<td align = "center"> <b> class </b> </td> <td> Associates the element with a CSS class, allowing one part of CSS code to be applied to all elements that have this class attribute. </td>
+				</tr> <tr>
+					<td align = "center"> <b> id </b> </td> <td> Uniquely identifies the given element so that it can be formatted with CSS. id is unique and two elements using the id attribute should not have the same id given to them. </td>
+				</tr> <tr>
+					<td align = "center"> <b> align </b> </td> <td> Used to specifiy the alignment for this element. Such as using align = "center" to position the element down the middle of the page. </td> </tr>
+			</table>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Document Layout </h2>
+			<div class = "pagePictures"> <img src = "Images/documentLayout.jpg" width = "250" height = "150" alt = "Document Layout Example" /> <p class = "exampleCaptions"> An Example of Document Layout. </p> </div>
+			<p> HTML documents follow a universal structure. The first is to define the doctype, using the &lt; !DOCTYPE &gt; tag. Since you are writing a HTML document, it is simpler to use &lt; !DOCTYPE html &gt;
+				at the start of the document to define it as a HTML document. <br/><br/>Next the &lt; html &gt; tag is used. This tag comes after the doctype and does not close until the very end of the document.
+				The rest of the page will be within this tag. The next is the head section, within the &lt; head &gt; tag. This contains information about the document to help process it.
+				This will include the &lt; title &gt; tag which will define a title (that is not shown on the page). Such as: &lt; title &gt; My Web Page &lt; /title &gt;. <br/><br/> The document will then use a 
+				&lt; body &gt; tag. This is where the whole page's content will go. The body tag is closed at the end of the document, just before the html tag is closed. </p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Hyperlinks </h2>
+			<p> The internet is built upon hyperlinks. Anything that you click on to get to another page is a hyperlink. You can create hyperlinks for your own page to link to other pages you have created or to
+				other online content. The simplest way of doing this in HTML is to use the anchor tag. Any elements, text, images etc that are within the given anchor tag will be a hyperlink, taking you to the 
+				destination specified when clicked. </p>
+			
+			<div class = "codeImageExamples"> <img src = "Images/linkExamples.jpg" width = "600" height = "100" alt = "Link Examples" /> <p class = "exampleCaptions"> An Examples of Using Hyperlinks in HTML. </p> </div>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Images </h2>
+			<p> Images can, of course, make a webpage more visually appealing and can break up extensive amounts of text content. Adding images to your site can be easily done using the &lt; src &gt; tag. </p>
+				
+				<div class = "codeImageExamples"> <img src = "Images/addingImagesExample.jpg" width = "600" height = "75" alt = "Images Example"/> <p class = "exampleCaptions"> An Example of Adding an Image Using HTML. </p> </div>
+				
+				<p>There are several points to note about the above example. Firstly, the use of a 
+				/ right before the end of the tag acts as a close for the tag, meaning that this does not require a closing tag as we have seen before. The use of the alt attribute will produce the text in quotes
+				if the image ever fails to load. This is much cleaner to see than a broken image. The use of the height and width attributes (measured in pixels) is important when using images. If these are not
+				specified, an image will revert to it's original resolution. If your image is very high resolution, it will cover the whole page, or if low will be difficult to see. Using the height and width tags	
+				are important to ensure that you control the images as you want to see them on your page.</p>
+		</div>
+		
+		<div class = "break"> </div>
+	
+	</body>
+
+</html>

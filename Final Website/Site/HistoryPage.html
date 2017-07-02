@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title> Tutorial Site: History Page </title>
+		<link rel = "stylesheet" type = "text/css" href = "tutorialsite.css" />
+		
+		<script src="JavaScript/jquery-1.12.3.min.js" type = "text/javascript"> </script>
+		<script type = "text/javascript" src = "JavaScript/TutorialSiteJavaScript.js" > </script>
+		
+	</head>
+	
+	<body>
+	
+		<div id = "nav">
+			<ul>
+				<li class = "navItem"> <a class = "navText" href = "HomePage.html"> Home </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "HistoryPage.html"> How </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "HTMLPage.html"> HTML </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "CSSPage.html"> CSS </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "QuizPage.html"> Quiz </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "furtherReading.html"> Extra </a> </li>
+				<li id = "navLogo"> <img src = "Images/uniLogo.png" width = "40" height = "45" alt = "UniLogo" /> </li>
+			</ul>
+		</div>
+		
+		<div class = "pageSection">
+			<h1> How the Internet Works </h1>
+			<p> The internet is a fairly complex digital structure that links the world together. When making a website for it, it is invaluable to know just what it is that you are working with.
+				The sections below will introduce you to the basics of how the internet works in order to give you this deeper understanding to help you make your websites better.</p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Types of Network </h2>
+			<p> The internet essentially connects computers together. This can be done in several ways, though two of the main ones are, peer-to-peer and client / server. Client / server works by the client
+				(E.G. a user on their home computer) connecting to a remote server which will supply the information to display the given web page. Peer-to-peer uses no central server to store information,
+				and connects the clients together directly. Essentialy, each client's computer works like a server, storing, sending and recieving the files to and from their peers (other clients). <br/><br/>
+				Usually, you will be developing web pages for a client / server setup, where your page will be stored on the server. Making it easy to access and change / update the page if and when 
+				it is required. </p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Protocols </h2>
+			<p> Protocols define set standards for passing data between different devices. Without these, it would be impossible for all types of devices to connect to each other. Devices need to agree on a 
+				set standard otherwise inter device communication becomes impossible, as data for one device would be unreadable to another. Below are some of the many protocols used to standardise
+				the internet. There are many more than these, but these are the most basic / essential ones. </p>
+				
+				<table  border = "1" cellpadding = "5" cellspacing = "5" width = "100%">
+				<tr>
+					<th colspan = "2" align = "center"> Protocols </th>
+				</tr> <tr>
+					<th align = "center"> Protocol </th> <th align = "center"> Description </th>
+				</tr> <tr>
+					<td align = "center"> <b> HTTP (HyperText Transfer Protocol) </b> </td> <td> Main protocol for web transactions. </td>
+				</tr> <tr>
+					<td align = "center"> <b> FTP (File Transfer Protocol) </b> </td> <td> Used to standardise filex exchange between computers. </td>
+				</tr> <tr>
+					<td align = "center"> <b> SSL (Secure Sockets Layer) </b> </td> <td> Used for data encryption. </td>
+				</tr> <tr>
+					<td align = "center"> <b> TCP (Transmission Control Protocol) </b> </td> <td> Handles direct connection between client / server software and network interfaces. </td>
+				</tr> <tr>
+					<td align = "center"> <b> IP (Internet Protocol) </b> </td> <td> Deals with delivery of packets to / from any device with a unique numeric identified (IP Address). </td>
+				</tr>
+				</table>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Accessing &amp; Sending Data </h2>
+			<p> Data is sent across the internet using packets. Packets contain a header and a body. The header contains addressing data (such as the IP address) to say where to send the data. The body
+				contains the actual data itself, the web page, video, picture etc. IP routes packets using the information in the header to direct the information to their destination. <br/><br/>
+				Data is, usually, accessed using a domain name. Other devices and servers are identified using an IP address, but these numeric addresses are not user friendly for a person to remember. The
+				way to solve this is using domain names. An IP address is linked to a name (such as the Google search engine's IP address is linked to www.google.co.uk). This allows the user to type in the name
+				rather than having to remember the numerical IP address. The links between names and IP addresses are stored on a Domain Name Server (DNS server). There are thousands of these across the world and
+				when you type in a web address your computer connects to one of these DNS servers, gets the IP address and then connects to the destination using that.<br/><br/>
+				Together packets and DNSs make the main backbone of the internet, allowing data to be sent and accessed. </p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+	
+	</body>
+
+</html>

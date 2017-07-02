@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title> Tutorial Site: CSS Page </title>
+		<link rel = "stylesheet" type = "text/css" href = "tutorialsite.css" />
+		
+		<script src = "JavaScript/jquery-1.12.3.min.js" type = "text/javascript"> </script>
+		<script type = "text/javascript" src = "JavaScript/TutorialSiteJavaScript.js" > </script>
+		
+	</head>
+	
+	<body>
+	
+		<div id = "nav">
+			<ul>
+				<li class = "navItem"> <a class = "navText" href = "HomePage.html"> Home </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "HistoryPage.html"> How </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "HTMLPage.html"> HTML </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "CSSPage.html"> CSS </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "QuizPage.html"> Quiz </a> </li>
+				<li class = "navItem"> <a class = "navText" href = "furtherReading.html"> Extra </a> </li>
+				<li id = "navLogo"> <img src = "Images/uniLogo.png" width = "40" height = "45" alt = "UniLogo" /> </li>
+			</ul>
+		</div>
+		
+		<div class = "pageSection">
+			<h1> CSS </h1>
+			<p> CSS (Cascading Style Sheets) are an additional part of webpages that accompany the <a href = "HTMLPage.html">HTML</a> framework. CSS allows you to add more complex formatting to your page than
+				HTML offers, allowing you to create more visually complex and appealing webpages. CSS works by selecting HTML tags from the page and then applies formatting to everything in the HTML document
+				which has that tag. Below are sections introducing you to the basics of CSS, note that there is much more to CSS than the basics that are covered here.</p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Adding CSS </h2>
+			<p> CSS style sheets can be written in the HTML file, however it is much cleaner to store them in their own file. In order to use them, you must link the CSS document to your HTML document, within the 
+				HTML's head tag. This is done using the link tag. Below is a good format to follow when linking an external CSS document to your HTML document.</p>
+				
+				<div class = "codeImageExamples"> <img src = "Images/CSSLinkingExample.jpg" width = "600" height = "70" alt = "CSS Linking Example" /> <p class = "exampleCaptions"> 
+				An Example of Linking a CSS Document to your HTML Page. </p> </div>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Selectors </h2>
+			<p> CSS uses what are known as selectors to state which part of the CSS code is applied to which HTML tags. This is done by selecting the HTML tag(s), hence the name. Additional tags are often
+				added to the original HTML document to allow CSS formatting more preciscion over which elements of the page it is selecting.</p>
+				
+			<table border = "1" cellpadding = "5" cellspacing = "5" width = "100%">
+			<tr>
+				<th align = "center" colspan = "2"> <b> CSS Selectors </b> </th>
+			</tr> <tr>
+				<td align = "center"> <b> Tag </b> </td> <td align = "center"> <b> Description </b> </td>
+			</tr> <tr>
+				<td align = "center"> <b> HTML Tags </b> </td> <td> Apply the given CSS formatting to all elements with the given HTML tag. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Div </b> </td> <td> Specific parts of a page can be put inside a div tag to allow CSS more accuracy when selecting which section of the page to format. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Class </b> </td> <td> Different tags can be given a class, allowing CSS to format numerous different tags with the same code, so long as they are specified as being part of this class. </td> 
+			</tr> <tr>
+				<td align = "center"> <b> id </b> </td> <td> Applies CSS formatting to elements within the tag with the given id. The id is unique and two tags should not share the same id. </td> </tr>
+			</table>
+			
+			<p>	Selectors are then used in the CSS file followed by the CSS formatting for that selector inbetween two brackets, E.G. Selector { Code Goes Here }. Selectors are identified in CSS slightly differently
+				depending on their type. Normal HTML tags are identified just as they are. For example, formatting all of the paragraph tags ( &lt; p &gt; ) on a page would be done using: p { CSS code }. Class
+				selectors are identified with a full stop. For example, to add formatting to a tag with class "myClass" would be done using: .myClass { CSS code }. Adding CSS to a unique id would be done using: 
+				#idName { CSS code }. CSS also allows for more specific selection, such as you can use "p.myClass" to apply CSS to all paragraph tags that have the class "myClass". Meaning that any elements
+				of this class, that are not a paragraph elements, will not recieve this formatting, allowing for greater control when selecting elements on the page. </p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Box Model </h2>
+			<div class = "pagePictures"> <img  src = "Images/boxModel.gif" width = "300" height = "150" alt = "Box Model" /> </div>
+			<p> The box model (illustrated right) is a uniform way of understanding how the formatting of CSS is applied to elements on the page. It builds outwards from the content layer by layer. 
+				The content section represents the original content, whether it be text, an image etc. Padding is a CSS attribute which represents the space between the main content and any applied borders.
+				Border represents the space taken up by any applied borders to the element. Margin represents the given space between this element and other elements in the page, allowing you to specify
+				white space between elements. <br/><br/>The box model is a simple way of visualising any formatting that is applied to an element, to help you understand what space is being taken up where. 
+				It is a useful tool when constructing webpages, as it can help with debugging and discovering ways of putting elements together on the page.</p>
+		</div>
+		
+		<div class = "break"> </div>
+		
+		<div class = "pageSection">
+			<h2> Formatting With CSS </h2>
+			<p> The CSS code itself is written by selecting specific parts to format and then writing the formatting required after a colon. The general format is written as "attributeToBeChanged : codeToAlterAttribute."
+			For example, the attribute height will be would be altered as "height: 10px" (with "px" representing 10 pixels). Note, the CSS attributes are usually altered on seperate lines for style and clarity.
+			Any attributes that take a measurement (susch as height) can be given: as auto (browser calculates it by default), as a length in pixels (px) centimeters (cm) etc and using a % sign (making the measurement
+			the given percentage of the available space). Below are some of the main attributes that you can format using CSS. These are just some of the basic, there are many more. </p>
+			
+			<table border = "1" cellpadding = "5" cellspacing = "5" width = "100%">
+			<tr>
+				<th align = "center" colspan = "2"> <b> Formattable CSS Attributes </b> </th>
+			</tr> <tr>
+				<th align = "center"> <b> Attribute </b> </th> <th align = "center"> <b> Description </b> </th>
+			</tr> <tr>
+				<td align = "center"> <b> Margin </b> </td> <td> Specifiy the amount of white space between this element and others. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Border </b> </td> <td> Allows for numerous types of border formatting, such as: border-width, border-style: and border-color:. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Padding </b> </td> <td> Specify the amount of white space between the element and its border. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Width &amp; Height </b> </td> <td> Allows specification of the width and height of the given element. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Background </b> </td> <td> Can be seet to a default color, using background-color:. Can be set to an image, background-image:, which can be set to repeat, background-repeat: repeat-x
+															| y | no-repeat. </td>
+			</tr>
+			</table>
+			
+			<p> CSS also gives you control over the positioning of elements, allowing you to shift elements around the page to make more complex layouts. Below are some of the attributes that can be altered
+				to change an element's position. </p>
+			
+			<table border = "1" cellpadding = "5" cellspacing = "5" width = "100%">
+			<tr>
+				<th align = "center" colspan = "2"> <b> Positioning Attributes </b> </th>
+			</tr> <tr>
+				<th align = "center"> <b> Attribute </b> </th> <th align = "center"> <b> Description </b> </th>
+			</tr> <tr>
+				<td align = "center"> <b> Float </b> </td> <td> Takes the element out of the page flow and moves it in the direction specified as far as possible. Can be float left and right. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Relative </b> </td> <td> The element stays in the page flow, but can be displayed in the specified offset position. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Absolute </b> </td> <td> Element removed from page flow and can be positioned in the specified location. </td>
+			</tr> <tr>
+				<td align = "center"> <b> Fixed </b> </td> <td> Element removed from page flow and is positioned in relation to the browser viewport (will stay in that position even when scrolling). </td>
+			</tr>
+			</table>
+			
+		</div>
+		
+		<div class = "break"> </div>
+	
+	</body>
+
+</html>
